@@ -1,0 +1,8 @@
+{
+    "name": "John Doe",
+    "age": 27,
+    "address": {
+        "street": "123 Main",
+        "city": "Smithville"
+    }
+}

@@ -1,6 +1,10 @@
-const  math = require("./math");
-const person = require("./person.json")
+const http = require("node:http");
 
-console.log(person.address);
-console.log(math.addNum(2, 3));
-console.log(math.subtractNum(2, 3));
+const server = http.createServer((req, res) => {
+    res.writeHead("200");
+    res.end("Test");
+});
+
+server.listen(3000, () => {
+    console.log("Server is running on port 3000");
+});
